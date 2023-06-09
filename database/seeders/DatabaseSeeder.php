@@ -20,13 +20,17 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
-$this->call([
-    AreaSeeder::class,
-    PartSeeder::class,
-    GroupSeeder::class,
-    HotelSeeder::class,
-    RoomSeeder::class,
-]);
+        $this->call([
+            AreaSeeder::class,
+            PartSeeder::class,
+            GroupSeeder::class,
+            HotelSeeder::class,
+            RoomSeeder::class,
+            AirlineSeeder::class,
+            CountriesTableSeeder::class,
+            StatesTableSeeder::class,
+            CitiesTableSeeder::class,
+        ]);
 
     }
 }

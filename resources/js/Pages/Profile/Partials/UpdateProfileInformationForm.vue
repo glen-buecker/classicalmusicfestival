@@ -18,6 +18,15 @@ const form = useForm({
     name: props.user.name,
     email: props.user.email,
     photo: null,
+    address1: '',
+    address2: '',
+    city: '',
+    state: '',
+    postal_code: '',
+    country: '',
+    passport_country: '',
+    primary_phone: '',
+    mobile_phone: '',
 });
 
 const verificationLinkSent = ref(null);

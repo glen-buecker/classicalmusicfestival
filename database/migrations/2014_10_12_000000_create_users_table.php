@@ -29,6 +29,17 @@ return new class extends Migration
      */
     public function down(): void
     {
+        if (Schema::hasTable('users')) {
+            // The "users" table exists...
+            Spatie\DbDumper\Databases\MySql::create()
+                -> doNotUseColumnStatistics()
+                -> setHost(env('DB_HOST'))
+                -> setDbName(env('DB_DATABASE'))
+                -> setUserName(env('DB_USERNAME'))
+                -> setPassword(env('DB_PASSWORD'))
+                -> includeTables('users')
+                -> dumpToFile('database/migration_dumps/' . now() . '_users_table.sql');
+        }
         Schema::dropIfExists('users');
     }
 };

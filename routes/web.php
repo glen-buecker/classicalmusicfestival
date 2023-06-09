@@ -39,3 +39,17 @@ Route::middleware([
 Route::get('/generalconditions', [GeneralConditionsController::class, 'index'])->name('generalconditions');
 
 Route::get('/partDropdown', [PartController::class, 'index'])->name('partDropdown');
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified',
+])->group(function () {
+    Route::get('/registration', function () {
+        return Inertia::render('CMF/Registration/Show');
+    })->name('registration');
+});
+
+Route::get('/airlines', function () {
+    return Inertia::render('CMF/Components/AirlineSelect`');
+})->name('airlines');

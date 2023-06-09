@@ -13,12 +13,14 @@ return new class extends Migration
     {
         Schema::create('rooms', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('hotel_id')->constrained();
+            $table->foreignId('hotel_id')->constrained('hotels');
             $table->string('room', 100);
             $table->float('cost');
             $table->integer('sort_order');
             $table->timestamps();
             $table->softDeletes();
+
+            //$table->foreign('hotel_id')->references('id')->on('hotels')->onDelete('cascade');
         });
     }
 
@@ -28,8 +30,13 @@ return new class extends Migration
     public function down(): void
     {
         if (Schema::hasTable('rooms')) {
-            Spatie\DbDumper\Databases\Sqlite::create()
-                -> setDbName('database/database.sqlite')
+            // The "users" table exists...
+            Spatie\DbDumper\Databases\MySql::create()
+                -> doNotUseColumnStatistics()
+                -> setHost(env('DB_HOST'))
+                -> setDbName(env('DB_DATABASE'))
+                -> setUserName(env('DB_USERNAME'))
+                -> setPassword(env('DB_PASSWORD'))
                 -> includeTables('rooms')
                 -> dumpToFile('database/migration_dumps/' . now() . '_rooms_table.sql');
         }

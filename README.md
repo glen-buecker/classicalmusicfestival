@@ -4,6 +4,7 @@
     2. pest
     3. dark mode
 2. Updated database settings in .env
+    1. set engine to innodb
 3. composer require spatie/db-dumper
     1. create directory *database/migration_dumps*
     2. code for dump() method
@@ -21,6 +22,12 @@
         }
       ```
 4. npm install dayjs
+5. composer require orangehill/iseed
+6. npm install vue-multiselect@next
+## Laravel Migration Generator
+https://github.com/bennett-treptow/laravel-migration-generator
+1. composer require --dev bennett-treptow/laravel-migration-generator
+2. php artisan vendor:publish --provider="LaravelMigrationGenerator\LaravelMigrationGeneratorProvider"
 ## Opscode log-viewer
 1. composer require opcodesio/log-viewer (https://log-viewer.opcodes.io/)
 2. php artisan log-viewer:publish

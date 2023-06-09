@@ -12,13 +12,15 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('parts', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('area_id', 100)->constrained()->cascadeOnDelete();
-            $table->string('part_name', 100); // Flute, Soprano, Instructor, etc.
+            $table->id('id');
+            $table->foreignId('area_id')->constrained();
+            $table->string('name', 100); // Flute, Soprano, Instructor, etc.
             $table->integer('sort_order_within_area')->nullable();
             $table->boolean('active')->default(1);
             $table->timestamps();
         });
+
+
     }
 
     /**
@@ -27,8 +29,13 @@ return new class extends Migration
     public function down(): void
     {
         if (Schema::hasTable('parts')) {
-            Spatie\DbDumper\Databases\Sqlite::create()
-                -> setDbName('database/database.sqlite')
+            // The "users" table exists...
+            Spatie\DbDumper\Databases\MySql::create()
+                -> doNotUseColumnStatistics()
+                -> setHost(env('DB_HOST'))
+                -> setDbName(env('DB_DATABASE'))
+                -> setUserName(env('DB_USERNAME'))
+                -> setPassword(env('DB_PASSWORD'))
                 -> includeTables('parts')
                 -> dumpToFile('database/migration_dumps/' . now() . '_parts_table.sql');
         }
