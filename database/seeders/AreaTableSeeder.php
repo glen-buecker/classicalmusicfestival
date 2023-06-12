@@ -14,7 +14,7 @@ class AreaTableSeeder extends Seeder
     public function run(): void
     {
         $a = new Area();
-        $a->name = 'General';
+        $a->name = 'Other';
         $a->sort_order = 10;
         $a->created_at = now()->timestamp;
         $a->save();
