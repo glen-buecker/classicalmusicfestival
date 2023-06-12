@@ -21,11 +21,18 @@ class PartTableSeeder extends Seeder
         $part->sort_order_within_area = 10; //within family
         $part->created_at = now()->timestamp;
         $part->save();
-//
+        //
         $part = new Part;
         $part->area_id = 1;
         $part->name = 'Faculty/Staff';
         $part->sort_order_within_area = 20; //within family
+        $part->created_at = now()->timestamp;
+        $part->save();
+        //
+        $part = new Part;
+        $part->area_id = 1;
+        $part->name = 'Family member'; // no cost ie. non-participating spouse or child
+        $part->sort_order_within_area = 30; //within family
         $part->created_at = now()->timestamp;
         $part->save();
 
