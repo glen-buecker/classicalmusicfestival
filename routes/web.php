@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\GeneralConditionsController;
 use App\Http\Controllers\PartController;
+use App\Http\Controllers\RegistrationController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -45,9 +46,7 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
-    Route::get('/registration', function () {
-        return Inertia::render('CMF/Registration/Show');
-    })->name('registration');
+    Route::get('/registration', [RegistrationController::class, 'index']);
 });
 
 Route::get('/airlines', function () {

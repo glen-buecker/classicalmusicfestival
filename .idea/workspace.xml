@@ -4,37 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e49ef90a-9479-498f-8a93-2c435d4439fd" name="Changes" comment="Updated MySQL tables and seeders">
-      <change afterPath="$PROJECT_DIR$/resources/js/Pages/CMF/Components/AirlineSelect.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/Pages/CMF/Components/Airlines.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/Pages/CMF/Components/CountryName.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/Pages/CMF/Components/PhoneCode.vue" afterDir="false" />
+    <list default="true" id="e49ef90a-9479-498f-8a93-2c435d4439fd" name="Changes" comment="Removed nullable() on constrained fields">
       <change afterPath="$PROJECT_DIR$/resources/js/Pages/CMF/Dashboard/Show.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/resources/js/Pages/CMF/Dashboard/Welcome.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/Pages/CMF/Registration/Partials/UpdateAccomodationsForm.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/Pages/CMF/Registration/Partials/UpdateContactForm.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/Pages/CMF/Registration/Partials/UpdateFestivalForm.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/Pages/CMF/Registration/Partials/UpdateNameParentForm.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/Pages/CMF/Registration/Partials/UpdateTravelForm.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/resources/js/Pages/CMF/Registration/Show.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/resources/markdown/conditions.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2023_05_31_143257_create_registrations_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2023_05_31_143257_create_registrations_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2023_05_31_143454_create_groups_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2023_05_31_143454_create_groups_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2023_05_31_145530_create_parts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2023_06_07_202000_create_parts_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2023_05_31_155815_create_rooms_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2023_05_31_160930_create_rooms_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2023_05_31_160925_create_hotels_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2023_05_31_160925_create_hotels_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2023_06_07_201633_create_areas_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2023_06_07_201633_create_areas_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/PartSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/PartSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/AreaTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/AreaTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/PartTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/PartTableSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Dashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Dashboard.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/Pages/GeneralConditions.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/CMF/GeneralConditions.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/Pages/Part/PartDropdown.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/CMF/Part/PartDropdown.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
@@ -48,6 +36,13 @@
     <execution>
       <executable path="composer" />
     </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Composition API Component" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -209,21 +204,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Volumes/Mercury Pro U2 Dual/Code/classicalmusicfestival/resources/js/Pages/CMF/Dashboard&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Volumes/Mercury Pro U2 Dual/Code/classicalmusicfestival/resources/js/Pages/CMF/Dashboard",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.editor",
+    "ts.external.directory.path": "/Users/gbuecker/Library/Application Support/JetBrains/Toolbox/apps/PhpStorm/ch-0/231.9011.38/PhpStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "vue.recent.templates": [
+      "Vue Composition API Component"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/js/Pages/CMF/Dashboard" />
@@ -231,10 +232,11 @@
       <recent name="$PROJECT_DIR$/resources/js/Pages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/database/migrations" />
+      <recent name="$PROJECT_DIR$/resources/js/Pages/CMF/Registration/Partials" />
       <recent name="$PROJECT_DIR$/resources/js/Pages/CMF/Components" />
       <recent name="$PROJECT_DIR$/resources/js/Pages/CMF" />
-      <recent name="$PROJECT_DIR$/resources/js/Pages/Part" />
+      <recent name="$PROJECT_DIR$/resources/js/Pages" />
+      <recent name="$PROJECT_DIR$/database/migrations" />
     </key>
   </component>
   <component name="RunManager" selected="Pest.phpunit.xml">
@@ -267,18 +269,69 @@
       <workItem from="1686174001187" duration="21878000" />
       <workItem from="1686247758041" duration="8758000" />
       <workItem from="1686326076590" duration="23725000" />
+      <workItem from="1686351901347" duration="19261000" />
+      <workItem from="1686425375682" duration="6104000" />
     </task>
+    <task id="LOCAL-00001" summary="Updated MySQL tables and seeders">
+      <created>1686351944151</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1686351944152</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Updated seeded names">
+      <created>1686587433952</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1686587433952</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Removed nullable() on constrained fields">
+      <created>1686587485247</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686587485247</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -287,7 +340,10 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Initial Laravel 10 install and database setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Laravel 10 install and database setup" />
+    <MESSAGE value="Updated MySQL tables and seeders" />
+    <MESSAGE value="Updated seeded names" />
+    <MESSAGE value="Removed nullable() on constrained fields" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed nullable() on constrained fields" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
