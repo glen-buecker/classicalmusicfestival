@@ -7,7 +7,7 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Str;
 use App\Models\Room;
 
-class RoomSeeder extends Seeder
+class RoomTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.

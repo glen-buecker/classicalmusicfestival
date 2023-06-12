@@ -21,15 +21,11 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
         $this->call([
-            AreaSeeder::class,
-            PartSeeder::class,
-            GroupSeeder::class,
-            HotelSeeder::class,
-            RoomSeeder::class,
-            AirlineSeeder::class,
-            CountriesTableSeeder::class,
-            StatesTableSeeder::class,
-            CitiesTableSeeder::class,
+            AreaTableSeeder::class,
+            PartTableSeeder::class,
+            GroupTableSeeder::class,
+            HotelTableSeeder::class,
+            RoomTableSeeder::class,
         ]);
 
     }

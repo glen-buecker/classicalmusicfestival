@@ -6,7 +6,7 @@ use App\Models\Area;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class AreaSeeder extends Seeder
+class AreaTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.

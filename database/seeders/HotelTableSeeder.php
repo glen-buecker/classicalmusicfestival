@@ -8,7 +8,7 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Str;
 
 
-class HotelSeeder extends Seeder
+class HotelTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
