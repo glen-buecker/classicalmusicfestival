@@ -1,31 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e49ef90a-9479-498f-8a93-2c435d4439fd" name="Changes" comment="Removed nullable() on constrained fields">
-      <change afterPath="$PROJECT_DIR$/resources/js/Pages/CMF/Dashboard/Show.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/Pages/CMF/Dashboard/Welcome.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/Pages/CMF/Registration/Partials/UpdateAccomodationsForm.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/Pages/CMF/Registration/Partials/UpdateContactForm.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/Pages/CMF/Registration/Partials/UpdateFestivalForm.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/Pages/CMF/Registration/Partials/UpdateNameParentForm.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/Pages/CMF/Registration/Partials/UpdateTravelForm.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/Pages/CMF/Registration/Show.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/markdown/conditions.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/AreaTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/AreaTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/PartTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/PartTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/GeneralConditions.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/CMF/GeneralConditions.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Part/PartDropdown.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/CMF/Part/PartDropdown.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
-    </list>
+    <list default="true" id="e49ef90a-9479-498f-8a93-2c435d4439fd" name="Changes" comment="Small details update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -215,11 +198,15 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "preferences.editor",
     "ts.external.directory.path": "/Users/gbuecker/Library/Application Support/JetBrains/Toolbox/apps/PhpStorm/ch-0/231.9011.38/PhpStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "JSON"
+    ],
     "vue.recent.templates": [
       "Vue Composition API Component"
     ]
@@ -270,7 +257,7 @@
       <workItem from="1686247758041" duration="8758000" />
       <workItem from="1686326076590" duration="23725000" />
       <workItem from="1686351901347" duration="19261000" />
-      <workItem from="1686425375682" duration="6104000" />
+      <workItem from="1686425375682" duration="13528000" />
     </task>
     <task id="LOCAL-00001" summary="Updated MySQL tables and seeders">
       <created>1686351944151</created>
@@ -293,7 +280,35 @@
       <option name="project" value="LOCAL" />
       <updated>1686587485247</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added Pinia">
+      <created>1686592279449</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686592279449</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Updated area tables seeder">
+      <created>1686592342404</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1686592342404</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Updated Parts table to include family member">
+      <created>1686592390753</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1686592390753</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Small details update">
+      <created>1686592439912</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1686592439912</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,7 +358,11 @@
     <MESSAGE value="Updated MySQL tables and seeders" />
     <MESSAGE value="Updated seeded names" />
     <MESSAGE value="Removed nullable() on constrained fields" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed nullable() on constrained fields" />
+    <MESSAGE value="Added Pinia" />
+    <MESSAGE value="Updated area tables seeder" />
+    <MESSAGE value="Updated Parts table to include family member" />
+    <MESSAGE value="Small details update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small details update" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

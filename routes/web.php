@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\GeneralConditionsController;
-use App\Http\Controllers\PartController;
 use App\Http\Controllers\RegistrationController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -39,16 +38,14 @@ Route::middleware([
 
 Route::get('/generalconditions', [GeneralConditionsController::class, 'index'])->name('generalconditions');
 
-Route::get('/partDropdown', [PartController::class, 'index'])->name('partDropdown');
 
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
-    Route::get('/registration', [RegistrationController::class, 'index']);
+    Route::get('/registration', [RegistrationController::class,
+        'index']);
 });
 
-Route::get('/airlines', function () {
-    return Inertia::render('CMF/Components/AirlineSelect`');
-})->name('airlines');
+

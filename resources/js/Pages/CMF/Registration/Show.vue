@@ -2,7 +2,7 @@
 import {ref, reactive, onMounted} from 'vue';
 import { Head, Link, router, useForm } from '@inertiajs/vue3';
 import AppLayout from '@/Layouts/AppLayout.vue';
-import AddressSectionForm from "@/Pages/CMF/Registration/Partials/UpdateContactForm.vue";
+import UpdateContactForm from "@/Pages/CMF/Registration/Partials/UpdateContactForm.vue";
 import FormSection from '@/Components/FormSection.vue';
 import SectionBorder from '@/Components/SectionBorder.vue';
 import Checkbox from '@/Components/Checkbox.vue';
@@ -13,30 +13,8 @@ import TextInput from '@/Components/TextInput.vue';
 import Multiselect from 'vue-multiselect';
 import {data} from "autoprefixer";
 import { defineStore } from 'pinia'
-import UpdatePasswordForm from "@/Pages/Profile/Partials/UpdatePasswordForm.vue";
+import UpdateNameParentForm from "@/Pages/CMF/Registration/Partials/UpdateNameParentForm.vue";
 
-
-const form = reactive({
-    name: '',
-
-
-    festival_year: '',
-    part_id: '',
-    room_id: '',
-    group_id: '',
-    roommate_request: '',
-    arrival_date: '',
-    arrival_time: '',
-    arrival_method: '',
-    arrival_shuttle: '',
-    arrival_note: '',
-    departure_date: '',
-    departure_time: '',
-    departure_method: '',
-    departure_shuttle: '',
-    departure_note: '',
-    special_needs: '',
-});
 
 const selectedCountry = ref(1)
 
@@ -51,7 +29,7 @@ defineProps({
     <AppLayout title="Registration">
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-                Profile
+                Registration
             </h2>
         </template>
 
@@ -70,27 +48,29 @@ defineProps({
                             3. festival track
                             4. accommodations
                             5. travel
+                            -->
+
+                            <!--Name/Parent Form-->
+                            <UpdateNameParentForm class="mt-10 sm:mt-0" />
+
+                            <SectionBorder />
 
                             <!--Address Form-->
-                            <div v-if="$page.props.jetstream.canUpdateAddress">
-                                <AddressForm class="mt-10 sm:mt-0" />
+                            <UpdateContactForm class="mt-10 sm:mt-0" />
 
-                                <SectionBorder />
-                            </div>
-
-
-                                <select v-model="selected"
-                                        name="country"
-                                        id="country">
-                                    <option selected disabled>Please select...</option>
-                                    <option v-for="country in countries"
-                                            :key="country.id"
-                                            :value="country.id"
-                                            v-text="country.name"></option>
-                                </select>
+                            <SectionBorder />
 
 
 
+<!--                                <select v-model="selected"-->
+<!--                                        name="country"-->
+<!--                                        id="country">-->
+<!--                                    <option selected disabled>Please select...</option>-->
+<!--                                    <option v-for="country in countries"-->
+<!--                                            :key="country.id"-->
+<!--                                            :value="country.id"-->
+<!--                                            v-text="country.name"></option>-->
+<!--                                </select>-->
 
                         </div>
                     </div>
