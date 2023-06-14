@@ -23,8 +23,9 @@
       ```
 4. npm install dayjs
 5. composer require orangehill/iseed
-6. npm install vue-multiselect@next
-7. npm install pinia
+6. npm install @vueform/multiselect
+7. 
+8. npm install nprogress
 ## Laravel Migration Generator
 https://github.com/bennett-treptow/laravel-migration-generator
 1. composer require --dev bennett-treptow/laravel-migration-generator

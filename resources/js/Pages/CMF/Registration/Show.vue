@@ -1,26 +1,44 @@
 <script setup>
-import {ref, reactive, onMounted} from 'vue';
-import { Head, Link, router, useForm } from '@inertiajs/vue3';
-import AppLayout from '@/Layouts/AppLayout.vue';
-import UpdateContactForm from "@/Pages/CMF/Registration/Partials/UpdateContactForm.vue";
-import FormSection from '@/Components/FormSection.vue';
-import SectionBorder from '@/Components/SectionBorder.vue';
-import Checkbox from '@/Components/Checkbox.vue';
-import InputError from '@/Components/InputError.vue';
-import InputLabel from '@/Components/InputLabel.vue';
-import PrimaryButton from '@/Components/PrimaryButton.vue';
-import TextInput from '@/Components/TextInput.vue';
-import Multiselect from 'vue-multiselect';
-import {data} from "autoprefixer";
-import { defineStore } from 'pinia'
-import UpdateNameParentForm from "@/Pages/CMF/Registration/Partials/UpdateNameParentForm.vue";
+    import {ref, reactive, onMounted} from 'vue';
+    import { Head, Link, router, useForm } from '@inertiajs/vue3';
+    import AppLayout from '@/Layouts/AppLayout.vue';
+    import UpdateNameParentForm from "@/Pages/CMF/Registration/Partials/UpdateNameParentForm.vue";
+    import UpdateContactForm from "@/Pages/CMF/Registration/Partials/UpdateContactForm.vue";
+    import FormSection from '@/Components/FormSection.vue';
+    import SectionBorder from '@/Components/SectionBorder.vue';
+    import Checkbox from '@/Components/Checkbox.vue';
+    import InputError from '@/Components/InputError.vue';
+    import InputLabel from '@/Components/InputLabel.vue';
+    import PrimaryButton from '@/Components/PrimaryButton.vue';
+    import TextInput from '@/Components/TextInput.vue';
 
 
-const selectedCountry = ref(1)
+    const props = defineProps({
+        festival_active: Boolean,
+        festival_year: String,
+        registration: Object,
+        countries: Object,
+    })
 
-defineProps({
-    countries: JSON,
-});
+    // // =============================================
+    // //    countrystatecity.in
+    // //
+    // var headers = new Headers();
+    // headers.append("X-CSCAPI-KEY", "MlBRM3J5ZGF1TEJOSHZhSld2R3NTWmVHbTJNeHdUMldJU2haQ3RjSQ==");
+    //
+    // var requestOptions = {
+    //     method: 'GET',
+    //     headers: headers,
+    //     redirect: 'follow'
+    // };
+    // function getCountriesList ()
+    // {
+    //     fetch("https://api.countrystatecity.in/v1/countries", requestOptions)
+    //         .then(response => response.text())
+    //         .then(result => console.log(result))
+    //         .catch(error => console.log('error', error));
+    // }
+    // // =============================================
 
 
 </script>
@@ -56,21 +74,10 @@ defineProps({
                             <SectionBorder />
 
                             <!--Address Form-->
-                            <UpdateContactForm class="mt-10 sm:mt-0" />
+                            <UpdateContactForm v-bind="$props" class="mt-10 sm:mt-0" />
 
                             <SectionBorder />
 
-
-
-<!--                                <select v-model="selected"-->
-<!--                                        name="country"-->
-<!--                                        id="country">-->
-<!--                                    <option selected disabled>Please select...</option>-->
-<!--                                    <option v-for="country in countries"-->
-<!--                                            :key="country.id"-->
-<!--                                            :value="country.id"-->
-<!--                                            v-text="country.name"></option>-->
-<!--                                </select>-->
 
                         </div>
                     </div>

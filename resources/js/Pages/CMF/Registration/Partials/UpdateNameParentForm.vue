@@ -27,7 +27,7 @@ const form = useForm({
 
         <template #form>
             <div class="col-span-6 sm:col-span-4">
-                <InputLabel for="siblingRelationship" value="Check this box if this registratipn is part of a family?"/>
+                <InputLabel for="siblingRelationship" value="Check this box if this registration is part of a family?"/>
                 <Checkbox
                     id="siblingRelationship"
                     ref="siblingRelationship"
@@ -43,10 +43,10 @@ const form = useForm({
                 <TextInput
                     id="name"
                     ref="nameInput"
-                    v-model="form.name"
+                    v-model="this.$page.props.registration.name"
                     type="text"
                     class="mt-1 block w-full"
-                    autocomplete="name"
+                    autocomplete="this.$page.props.registration.name"
                 />
                 <InputError :message="form.errors.name" class="mt-2" />
             </div>

@@ -14,7 +14,7 @@ class UserTableSeeder extends Seeder
     public function run(): void
     {
         $u = new User();
-        $u->id = 2;
+        $u->id = 1;
         $u->name = 'Glen Buecker';
         $u->email = 'gbuecker@icloud.com';
         $u->password = '$2y$10$JmLz3IbdntEfzyEP6APVG.Rw61.1.6wwXRa8oonSBbMh4tkUXccZm';
